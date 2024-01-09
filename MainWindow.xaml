@@ -1,0 +1,23 @@
+﻿<Window x:Class="BMICaculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BMICaculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="AliceBlue">
+    <Grid>
+        <Label Content="Height in cm: " HorizontalAlignment="Left" Margin="56,92,0,0" VerticalAlignment="Top" FontSize="24" Height="38" Width="157"/>
+        <Label Content="Mass in kg:" HorizontalAlignment="Left" Margin="56,175,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="heightBox" HorizontalAlignment="Left" Margin="322,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="24" TextChanged="heightBox_TextChanged"/>
+        <TextBox x:Name="massBox" HorizontalAlignment="Left" Margin="322,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="24" />
+        <Label Content="Your BMI is:" HorizontalAlignment="Left" Margin="38,305,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="bmiBox" HorizontalAlignment="Left" Margin="328,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontSize="24" TextChanged="bmiBox_TextChanged"/>
+        <Button Content="Calculate" HorizontalAlignment="Center" Margin="0,238,0,0" VerticalAlignment="Top" FontSize="24" Height="38" Width="144" Click="Button_Click_1"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="649,372,0,0" VerticalAlignment="Top" FontSize="24" Width="121" Height="40" Click="Button_Click"/>
+        <Label Content="Your BMI status is:" HorizontalAlignment="Left" Margin="38,347,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="bmiStatus" HorizontalAlignment="Left" Margin="328,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" FontSize="24" TextChanged="bmiBox_TextChanged"/>
+        <Label Content="BMI CALCULATOR" HorizontalAlignment="Left" Margin="196,12,0,0" VerticalAlignment="Top" FontSize="54" Height="80" Width="482" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
